@@ -1,64 +1,147 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <title>User</title>
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-  <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <title>Add New</title>
+      <link rel="icon" href="/img/add.png" type="image/png"/>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>
 
-  <!--Favicon-->
+      <style media="screen">
+        h2 {
+          font-size:36px;
+          line-height: 110%;
+          font-family: 'Roboto Slab', serif;
+          margin: 36px 0 24px 0;
+        }
 
-  <!--Set Styles for Headings-->
+
+      </style>
+
+   </head>
+
+<body class="container">
 
 
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
-  <body>
-    <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
+
+
+
+  <div class = "row">
+
+         <form class = "col s10">
+           <h2><strong>Personal Info</strong></h2>
+            <div class="card-panel z-depth-2">
+
+              <div class = "row">
+
+                   <div class = "input-field col s4">
+                      <i class = "material-icons prefix">account_circle</i>
+                      <input placeholder = "9-Digit ID"  id = "name"
+                         type = "text" class = "active validate" required />
+                      <label for = "name">Staff ID</label>
+                   </div>
+
+                   <div class = "input-field col s4">
+                     <i class="material-icons prefix">email</i>
+                      <input placeholder = "Email" id = "email" type = "email"
+                         class = "validate">
+                      <label for = "email">Email</label>
+                   </div>
+
+
+
+              </div>
+
+              <div class = "row">
+
+                 <!-------------------------------PERSONAL INFO---------------------------->
+                 <div class = "input-field col s4">
+                   <i class = "material-icons prefix">person</i>
+                    <input placeholder = "Enter Last Name Here" id = "name"
+                       type = "text" class = "active validate" required />
+                    <label for = "name">Last Name</label>
+                 </div>
+
+                 <div class = "input-field col s4">
+                    <input placeholder = "Enter First Name here"  id = "name"
+                       type = "text" class = "active validate" required />
+                    <label for = "name">First Name</label>
+                 </div>
+
+                 <div class = "input-field col s4">
+                   <i class = "material-icons prefix">phone</i>
+                    <input placeholder = "Enter Primary Phone Here"  id = "name"
+                       type = "tel" class = "materialize-textarea" required />
+                    <label for = "name">Telephone</label>
+                 </div>
+
+              </div>
+
+              <div class = "row">
+                 <div class = "input-field col s7">
+                    <i class = "material-icons prefix">mode_edit</i>
+                    <input placeholder = "Street Number and Name"  id = "address"
+                       type = "text" class = "active validate" required />
+                    <label for = "name">Address Line I</label>
+                 </div>
+
+                 <div class = "input-field col s7">
+                   <i class = "material-icons prefix"></i>
+                    <input placeholder = ""  id = "address"
+                       type = "text" class = "active validate" required />
+                    <label for = "name">Address Line II</label>
+                 </div>
+
+                 <div class="row">
+                   <div class = "input-field col s6">
+                     <i class = "material-icons prefix">location_city</i>
+                      <input placeholder = "City"  id = "address"
+                         type = "text" class = "active validate" required />
+                      <label for = "name">City</label>
+                   </div>
+
+                   <div class = "input-field col s6">
+                     <i class = "material-icons prefix">my_location</i>
+                      <input placeholder = "XXX-XXX"  id = "address"
+                         type = "text" class = "active validate" required />
+                      <label for = "name">ZIP Code</label>
+                   </div>
+
+                 </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+
+              <div class="input-field col s12">
+
+
+              <select>
+                <option value="Tghis" selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <label>Course</label>
+            </div>
+
+
+
+
+         </form>
       </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-          <label for="disabled">Disabled</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12">
-          This is an inline input field:
-          <div class="input-field inline">
-            <input id="email_inline" type="email" class="validate">
-            <label for="email_inline">Email</label>
-            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-  </body>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+</body>
+
 </html>
