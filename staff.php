@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>Staff</title>
   <!--Import Google Icon Font-->
@@ -7,11 +8,13 @@
   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
   <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=MyriadPro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=MyriadPro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Mono" rel="stylesheet">
+    <script src="https://unpkg.com/@material-ui/core/umd/material-ui.production.min.js" crossorigin="anonymous"></script>
+
   <!--Favicon-->
-  <link rel="icon" src="img/favicon.png">
+  <link rel="icon" type="img/png" href="img/baseline_account_circle_black_48dp.png">
 
   <!--Set Styles for Headings-->
   <style media="screen">
@@ -24,7 +27,7 @@
     }
 
   nav {
-    background-color: #00838f !important;
+    background-color: #086375 !important;
     position: fixed;
     top: 0;
   }
@@ -43,15 +46,40 @@
       border: none;
       padding-left: 50px !important;
     }
+
+    
     .sidenav {
       position: fixed !important;
       left: 0;
     }
+
+
+
     .card-panel
     {
-      margin: 1px 1px 1px 1px !important;
+      margin: 10px 10px 10px 10px !important;
 
     }
+
+    ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF;
+            -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #B2B09B;
+            -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #EF3054
+;
+        }
+        ::-webkit-scrollbar-thumb:active {
+            background: #EF3054;
+            -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
+        }
   </style>
 
   <!--Let browser know website is optimized for mobile-->
@@ -61,6 +89,7 @@
 
 <body>
   <!--NAVIGATION BAR-->
+  <br>
   <div class="row">
     <div class="wrapper">
           <nav class="" role="navigation">
@@ -75,13 +104,13 @@
 
                   <ul class="hide-on-med-and-down right">
                       <li>
-                        <form>
+                        <form action="search.php" method="post">
                           <div class="row">
                             <div class="col s2 l3">
                               <div class="row">
                                 <div class="input-field col s2 l3">
                                   <i class="material-icons prefix">search</i>
-                                  <input type="text" id="autocomplete-input" class="autocomplete">
+                                  <input type="text" id="autocomplete-input" class="autocomplete" name="search_in">
                                   <label for="autocomplete-input">Search here...</label>
                                 </div>
                               </div>
@@ -107,9 +136,9 @@
          <li><img class="responsive-img" src="https://sta.uwi.edu/newspics/2017/Regcrest.jpg" width="200px"></li>
 
         <!--Links to other pages must be inserted-->
-         <li class="card-panel z-depth-2"><a href="#!"><i class="material-icons small">account_circle</i>Staff</a></li>
-         <li class="card-panel z-depth-2"><a href="#!"><i class="material-icons prefix small">list</i>Index</a></li>
-         <li class="card-panel z-depth-2"><a href="#!"><i class="material-icons prefix small">priority_high</i>Report Issues</a></li>
+         <li class="card-panel navpanel z-depth-2"><a href="#!"><i class="material-icons small">account_circle</i>Staff</a></li>
+         <li class="card-panel navpanel z-depth-2"><a href="#!"><i class="material-icons prefix small">list</i>Index</a></li>
+         <li class="card-panel navpanel z-depth-2"><a href="#!"><i class="material-icons prefix small">priority_high</i>Report Issues</a></li>
 
 
           <li>
@@ -135,14 +164,6 @@
          }
 
         $db = new MyDB();
-          // if(!$db)
-          //  {
-          //      echo $db->lastErrorMsg();
-          //  }
-          //   else
-          //  {
-          //      echo "Opened database successfully\n";
-          //  }
            echo '<br/>';
          //QUERIES
          $sql = "SELECT * FROM test_table";
@@ -190,6 +211,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
 <script type="text/javascript" src="js/materialize.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js">  </script>
+
 
 </body>
 
