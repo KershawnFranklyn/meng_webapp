@@ -47,7 +47,7 @@
       padding-left: 50px !important;
     }
 
-    
+
     .sidenav {
       position: fixed !important;
       left: 0;
@@ -136,8 +136,9 @@
          <li><img class="responsive-img" src="https://sta.uwi.edu/newspics/2017/Regcrest.jpg" width="200px"></li>
 
         <!--Links to other pages must be inserted-->
+        <li class="card-panel navpanel z-depth-2"><a href="/main.php"><i class="material-icons small">home</i>Home</a></li>
          <li class="card-panel navpanel z-depth-2"><a href="#!"><i class="material-icons small">account_circle</i>Staff</a></li>
-         <li class="card-panel navpanel z-depth-2"><a href="#!"><i class="material-icons prefix small">list</i>Index</a></li>
+         <li class="card-panel navpanel z-depth-2"><a href="/index.php"><i class="material-icons prefix small">list</i>Index</a></li>
          <li class="card-panel navpanel z-depth-2"><a href="#!"><i class="material-icons prefix small">priority_high</i>Report Issues</a></li>
 
 

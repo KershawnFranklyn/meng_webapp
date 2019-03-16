@@ -138,8 +138,8 @@
 
        <!--Links to other pages must be inserted-->
        <li class="card-panel navpanel z-depth-2"><a href="#!"><i class="material-icons small">home</i>Home</a></li>
-        <li class="card-panel navpanel z-depth-2"><a href="#!"><i class="material-icons small">account_circle</i>Staff</a></li>
-        <li class="card-panel navpanel z-depth-2"><a href="#!"><i class="material-icons prefix small">list</i>Index</a></li>
+        <li class="card-panel navpanel z-depth-2"><a href="/staff.php"><i class="material-icons small">account_circle</i>Staff</a></li>
+        <li class="card-panel navpanel z-depth-2"><a href="/index.php"><i class="material-icons prefix small">list</i>Index</a></li>
         <li class="card-panel navpanel z-depth-2"><a href="#!"><i class="material-icons prefix small">priority_high</i>Report Issues</a></li>
 
 
